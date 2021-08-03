@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body id="home" >
+       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+           <div class="container">
+               <a class="navbar-brand fw-bold" href="#">Rizky Fiyannur</a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                   data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                   aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                       <li class="nav-item">
+                           <a class="nav-link nav-btn-home" href="#home">Home</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link nav-btn-about" href="#about">About</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link nav-btn-service" href="#service">Service</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link nav-btn-portfolio" href="#portfolio">Portfolio</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link nav-btn-cv" href="#cv">My-CV</a>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+       </nav>
+       
+       <script>
+        $('.nav-btn-home').on('click', function(){
+            $(this).toggleClass('active');
+            $('.nav-btn-about').removeClass('active');
+            $('.nav-btn-service').removeClass('active');
+            $('.nav-btn-portfolio').removeClass('active');
+            $('.nav-btn-cv').removeClass('active');
+        });
+        $('.nav-btn-about').on('click', function(){
+            $(this).toggleClass('active');
+            $('.nav-btn-home').removeClass('active');
+            $('.nav-btn-service').removeClass('active');
+            $('.nav-btn-portfolio').removeClass('active');
+            $('.nav-btn-cv').removeClass('active');
+        });
+        $('.nav-btn-service').on('click', function(){
+            $(this).toggleClass('active');
+            $('.nav-btn-home').removeClass('active');
+            $('.nav-btn-about').removeClass('active');
+            $('.nav-btn-portfolio').removeClass('active');
+            $('.nav-btn-cv').removeClass('active');
+        });
+        $('.nav-btn-portfolio').on('click', function(){
+            $(this).toggleClass('active');
+            $('.nav-btn-home').removeClass('active');
+            $('.nav-btn-about').removeClass('active');
+            $('.nav-btn-service').removeClass('active');
+            $('.nav-btn-cv').removeClass('active');
+        });
+        $('.nav-btn-cv').on('click', function(){
+            $(this).toggleClass('active');
+            $('.nav-btn-home').removeClass('active');
+            $('.nav-btn-about').removeClass('active');
+            $('.nav-btn-service').removeClass('active');
+            $('.nav-btn-portfolio').removeClass('active');
+        });
+      </script>
+
+        <div class="jumbotron">
+            <div class="p-5 mb-4 rounded-0">
+                <div class="container py-5 text-center">
+                    <div class="jumbotron-text">
+                        <h1 class="display-5 fw-bold">Hallo I'm Rizky</h1>
+                        <p class="col-md fs-4">I Love Web Programming</p>
+                    </div>
+                    <a class="btn btn-dark btn-lg btn-profile" href="#contact">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+    
+   <!-- About -->     
+    <section id="about" >
+       <div class="container">
+           <!-- <div class="row text-center">
+               <h1>About Me</h1>
+           </div> -->
+           <div class="row mt-lg-5 justify-content-center fs-6">
+               <div class="row about-text text-center">
+                   <h1>About Me</h1>
+               </div>
+               <div class="row about-content justify-content-center">
+
+                   <div class="col-md-4">
+                       <p align="justify" style="text-indent: 45px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed molestias ab ut molestiae minima ratione iste ex, sequi in ea nemo amet nesciunt, corporis autem. Nihil similique omnis iste ex!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p align="justify" style="text-indent: 45px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi nostrum repudiandae vero rerum quae explicabo dolorum non reiciendis sed sit iure culpa, molestias iste earum et unde eaque dolor harum.</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+   
+    <!-- Service -->
+    <section id="service" >
+       <div class="container">
+           <!-- <div class="row text-center">
+               <h1>About Me</h1>
+           </div> -->
+           <div class="row mt-lg-5 justify-content-center fs-6">
+               <div class="row service-text text-center">
+                   <h1>Service</h1>
+               </div>
+               <div class="row service-content justify-content-center">
+
+                   <div class="col-md-6">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <span class="fab fa-js-square" style="position:relative; display: flex;align-items: center;
+                            justify-content: center; padding-top: 50px; padding-bottom: 50px; font-size: 60px;"></span>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body" style="position:relative; display: flex;align-items: center;
+                            justify-content: center; padding-top: 50px; padding-bottom: 50px; font-size: 60px;">
+                              <h2 class="card-title">Javascript & JQuery</h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   <div class="col-md-6">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <span class="fab fa-php" style="position:relative; display: flex;align-items: center;
+                            justify-content: center; padding-top: 50px; padding-bottom: 50px; font-size: 60px;"></span>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body" style="position:relative; display: flex;align-items: center;
+                            justify-content: center; padding-top: 50px; padding-bottom: 50px; font-size: 60px;">
+                              <h2 class="card-title">PHP</h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   <div class="col-md-6">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                              <span class="fas fa-fire" style="position:relative; display: flex;align-items: center;
+                              justify-content: center; padding-top: 50px; padding-bottom: 50px; font-size: 60px;"></span>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body" style="position:relative; display: flex;align-items: center;
+                            justify-content: center; padding-top: 50px; padding-bottom: 50px; font-size: 60px;">
+                              <h2 class="card-title">Framework CI</h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   <div class="col-md-6">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <span class="fab fa-laravel" style="position:relative; display: flex;align-items: center;
+                            justify-content: center; padding-top: 50px; padding-bottom: 50px; font-size: 60px;"></span>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body" style="position:relative; display: flex;align-items: center;
+                            justify-content: center; padding-top: 50px; padding-bottom: 50px; font-size: 60px;">
+                              <h2 class="card-title">Framework Laravel</h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   <div class="col-md-6">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <span class="fab fa-git" style="position:relative; display: flex;align-items: center;
+                            justify-content: center; padding-top: 50px; padding-bottom: 50px; font-size: 60px;"></span>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body" style="position:relative; display: flex;align-items: center;
+                            justify-content: center; padding-top: 50px; padding-bottom: 50px; font-size: 60px;">
+                              <h2 class="card-title">GIT</h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   <div class="col-md-6">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <span class="fab fa-github" style="position:relative; display: flex;align-items: center;
+                            justify-content: center; padding-top: 50px; padding-bottom: 50px; font-size: 60px;"></span>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body" style="position:relative; display: flex;align-items: center;
+                            justify-content: center; padding-top: 50px; padding-bottom: 50px; font-size: 60px;">
+                              <h2 class="card-title">GIT Hub</h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+    </section>
+    <!-- Service -->
+    <section id="portfolio" >
+       <div class="container">
+           <!-- <div class="row text-center">
+               <h1>About Me</h1>
+           </div> -->
+           <div class="row mt-lg-5 justify-content-center fs-6">
+               <div class="row portfolio-text text-center">
+                   <h1>Portfolio</h1>
+               </div>
+               <div class="row portfolio-content justify-content-center">
+                    
+                    <div class="col-lg-6">
+                        <div class="card mb-3">
+                            <img src="img/f&b.png" class="img-project">
+                            <div class="card-body">
+                                <h5 class="card-title">Website Penyewaan Lapangan</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card mb-3">
+                            <img src="img/rtrw.jpg" class="img-project">
+                            <div class="card-body">
+                                <h5 class="card-title">Website RT dan RW Penjaringan</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="card mb-3">
+                          <img src="img/crud-laravel.png" class="img-project">
+                          <div class="card-body">
+                              <h5 class="card-title">Crud Laravel, Learn Route,Migration,Seed,Models dll.</h5>
+                          </div>
+                      </div>
+                  </div>
+                  
+                    
+                </div>
+            </div>
+          </div> 
+        </section>
+        
+        <!-- contact -->
+        <section id="contact">
+          <div class="container">
+            <div class="row mt-lg-5 justify-content-center fs-6">
+                <div class="row contact-text text-center">
+                    <h1>Contact</h1>
+                </div>
+                <div class="row contact-content justify-content-center">
+                    
+                  <div class="col-md-6">
+                    <!-- alert -->
+                    <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+                      <strong>Terima Kasih !</strong> Pesan Telah Di Terima !!
+                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <!-- alert end -->
+                    <form id="form-contact" name="rizky-contact-form">
+                      <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" name="name" id="name" autocomplete="off" placeholder="Your Name / Company" required aria-describedby="name" />
+                      </div>
+                      <div class="mb-3">
+                        <label for="email" class="form-label">Your E-mail Address</label>
+                        <input type="email" class="form-control" name="email" id="email" autocomplete="off" placeholder="Your E-mail" required aria-describedby="email" />
+                      </div>
+                      <div class="mb-3">
+                        <label for="pesan" class="form-label">Messege To Me</label>
+                        <textarea class="form-control" name="pesan" id="pesan" rows="3" placeholder="Messege To Me"></textarea>
+                      </div>
+        
+                      <button type="submit" name="submit" class="btn-send form-control btn btn-dark">
+                        <div class="hide-buffering"><span class="fas fa-paper-plane"></span> Send</div>
+                        <div class="buffering"></div>
+                      </button>
+                      <button class="btn-load form-control btn-secondary d-none" type="button" disabled>
+                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        Loading...
+                      </button>
+                    </form>
+                  </div>
+                  
+                    
+                </div>
+            </div>
+           </div>
+    </section>
+
+    <section>
+        <footer class="bg-dark text-center text-white my-5">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.instagram.com/_fynrizky/" role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+      
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          Created Design By :
+          <a class="text-white" href="https://www.instagram.com/_fynrizky/">Rizky Fyannur</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+        
+    </section>
+
+</body>
+</html>
