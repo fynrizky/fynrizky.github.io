@@ -10,7 +10,7 @@
     content: '';
     display: block;
     width: 100%;
-    height: 80%;
+    height: 70%;
     background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0, 0, 0, 0));
     position: absolute;
     bottom: 0px;
@@ -23,10 +23,22 @@
     z-index: 1;
     position: relative;
 }
-.btn-profile{
+
+.jumbotron .jumbotron-text h2 {
+  display: inline-block;
+  margin: 0;
+  height: 35px;
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.jumbotron-btn{
+    margin-top: 20px;
     z-index: 1;
     position: relative;
 }
+
 .navbar-brand {
     font-size: 40px ;
     z-index: 1;
@@ -43,75 +55,240 @@
 
 
 #about{
-    height: 720px;
-    /* margin-top: 40px; */
-    background-color: rgb(249, 165, 165);
+    height: 100%;
+    background-color: rgb(254, 178, 178);
 }
 #service{
-    height: 2200px;
-    /* margin-top: 40px; */
+    height: 100%;
     background-color: whitesmoke;
 }
 #portfolio{
-    height: 2000px;
-    /* margin-top: 40px; */
-    background-color: rgb(199, 199, 199);
+    height: 100%;
+    background-color: rgb(222, 222, 222);
 }
 #contact{
-    height: 720px;
-    /* margin-top: 40px; */
-    background-color: whitesmoke;
+    height: 100%;
+    background-color: rgb(224, 235, 239);
 }
 
 .about-text{
     margin-top: 100px;
 }
 .about-content{
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .service-text{
     margin-top: 100px;
 }
 .service-content{
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .portfolio-text{
-    margin-top: 100px;
+    margin-top: 20px;
 }
 .portfolio-content{
-    margin-top: 30px;
+    margin-top: -20px;
+    margin-bottom: 30px;
 }
 .contact-text{
     margin-top: 100px;
 }
 .contact-content{
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
-.img-project{
+
+/* portfolio */
+/*----  Main Style  ----*/
+#cards_landscape_wrap-2{
+    text-align: center;
+    /* background: #F7F7F7; */
+  }
+  #cards_landscape_wrap-2 .container{
+    padding-top: 80px; 
+    padding-bottom: 100px;
+  }
+  #cards_landscape_wrap-2 a{
+    text-decoration: none;
+    outline: none;
+  }
+  #cards_landscape_wrap-2 .card-flyer {
+    border-radius: 5px;
+  }
+  #cards_landscape_wrap-2 .card-flyer .image-box{
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+    border-radius: 5px;
+  }
+  #cards_landscape_wrap-2 .card-flyer .image-box img{
+    -webkit-transition:all .9s ease; 
+    -moz-transition:all .9s ease; 
+    -o-transition:all .9s ease;
+    -ms-transition:all .9s ease; 
     width: 100%;
-    height: 250px;
+    height: 100%;
+  }
+  #cards_landscape_wrap-2 .card-flyer:hover .image-box img{
+    opacity: 0.7;
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.15);
+    transform:scale(1.15);
+  }
+  #cards_landscape_wrap-2 .card-flyer .text-box{
+    text-align: center;
+  }
+  #cards_landscape_wrap-2 .card-flyer .text-box .text-container{
+    padding: 30px 18px;
+  }
+  #cards_landscape_wrap-2 .card-flyer{
+    background: #FFFFFF;
+    margin-top: 50px;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+  }
+  #cards_landscape_wrap-2 .card-flyer:hover{
+    background: #fff;
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    margin-top: 50px;
+  }
+  #cards_landscape_wrap-2 .card-flyer .text-box p{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px; 
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #000000;
+  }
+  #cards_landscape_wrap-2 .card-flyer .text-box h6{
+    margin-top: 0px;
+    margin-bottom: 4px; 
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto Black', sans-serif;
+    letter-spacing: 1px;
+    color: #00acc1;
+  }
+  
+  /* Loader */
+  #loader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity .3s ease-out, visibility 0s linear .3s;
+    -o-transition: opacity .3s ease-out, visibility 0s linear .3s;
+    transition: opacity .3s ease-out, visibility 0s linear .3s;
+    z-index: 999;
 }
+
+#loader.show {
+    -webkit-transition: opacity .6s ease-out, visibility 0s linear 0s;
+    -o-transition: opacity .6s ease-out, visibility 0s linear 0s;
+    transition: opacity .6s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+#loader .loader {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border: 5px solid #dddddd;
+    border-top: 5px solid #3f3f3f;
+    border-radius: 50%;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Back to top button */
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 44px;
+  height: 44px;
+  padding: 8px 0;
+  text-align: center;
+  line-height: 1;
+  font-size: 22px;
+  right: 15px;
+  bottom: 15px;
+  z-index: 9;
+}
+
+.back-to-top i {
+  color: #000000;
+}
+
+.back-to-top:hover i {
+  color: #1f1f1f;
+}
+
+
+
+.jumbotron .jumbotron-text .typed-text {
+  display: none;
+}
+.jumbotron .jumbotron-text .typed-cursor {
+  font-size: 35px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
 
 
 /* Dekstop version */
 @media (min-width: 992px) { 
     .navbar-brand{
-        color: rgb(0, 0, 0) !important;
+        /* color: rgb(0, 0, 0) !important; */
         text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
     }
     .nav-link{
-        color: rgb(0, 0, 0) !important;
-        text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
-        border-bottom: rgb(52, 52, 52);
+        /* color: rgb(0, 0, 0) !important; */
+        text-shadow: 1px 1px 0px rgba(184, 184, 184, 0.8);
     }   
-    .nav-link:hover::after{
+    .nav-link:hover::after, .active::after{
         content: '';
         display: block;
-        border-bottom: 3px solid  rgb(52, 52, 52);
-        width: 50%;
+        background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.7));
+        /* border-bottom: 3px solid  #3a3a3a69; */
+        border-radius: 10px;
+        width: 30px;
         margin: auto;
         padding-bottom: 5px;
         margin-bottom: -8px;
@@ -127,15 +304,11 @@
     .navbar, .bg-light {
         background: transparent !important;
     }
-    #service{
-        height: 800px;
-        /* margin-top: 40px; */
-        background-color: whitesmoke;
-    }
-    #portfolio{
-        height: 900px;
-        /* margin-top: 40px; */
-        background-color:  rgb(199, 199, 199);
-    }
-  
+    
+  /* card project */
+  #cards_landscape_wrap-2 .card-flyer .image-box img{
+    
+    width: 100%;
+    height: 270px;
+  }
  }
