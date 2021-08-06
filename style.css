@@ -29,7 +29,7 @@
   margin: 0;
   height: 35px;
   color: #ffffff;
-  font-size: 35px;
+  font-size: 24px;
   font-weight: 600;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .navbar-brand {
-    font-size: 40px ;
+    font-size: 64px ;
     z-index: 1;
     position: relative;
     /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8); */
@@ -276,11 +276,11 @@
 @media (min-width: 992px) { 
     .navbar-brand{
         /* color: rgb(0, 0, 0) !important; */
-        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+        text-shadow: 10px 8px 2px rgb(255, 255, 255);
     }
     .nav-link{
         /* color: rgb(0, 0, 0) !important; */
-        text-shadow: 1px 1px 0px rgba(184, 184, 184, 0.8);
+        text-shadow: 1px 1px 1px rgba(184, 184, 184, 0.8);
     }   
     .nav-link:hover::after, .active::after{
         content: '';
@@ -299,8 +299,13 @@
         
     }
     .jumbotron-text {
-        margin-top: 200px;
+        margin-top: 150px;
     }
+    
+    .jumbotron .jumbotron-text h2 {
+      font-size: 34px;
+    }
+
     .navbar, .bg-light {
         background: transparent !important;
     }
