@@ -281,13 +281,33 @@
         text-shadow: 10px 8px 2px rgb(255, 255, 255);
     }
     .nav-link{
-        /* color: rgb(0, 0, 0) !important; */
+        color: rgb(0, 0, 0) !important;
+        font-size: 24px ;
+        font-family: roboto, sans-serif, arial;
         text-shadow: 1px 1px 1px rgba(184, 184, 184, 0.8);
     }   
-    .nav-link:hover::after, .active::after{
+
+        
+    .nav-link:hover, .active{
+      color: rgba(0, 0, 0, 0.5) !important;
+      transition: 500ms;
+    } 
+
+    /* .nav-link:hover::after{
         content: '';
         display: block;
-        background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.7));
+        background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0, 0, 0, 0.5));
+        border-radius: 10px;
+        width: 30px;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+      }
+       */
+      .active::after{
+        content: '';
+        display: block;
+        background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0, 0, 0, 0.7));
         /* border-bottom: 3px solid  #3a3a3a69; */
         border-radius: 10px;
         width: 30px;
@@ -295,7 +315,7 @@
         padding-bottom: 5px;
         margin-bottom: -8px;
         
-    }
+      }
     .jumbotron {
         margin-top: 0px;
         
