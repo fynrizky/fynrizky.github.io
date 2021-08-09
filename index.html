@@ -61,7 +61,7 @@
             <div class="typed-text">Web Programming, HTML And CSS, Javascript Language, JQuery Library, PHP Language, Object Oriented, Laravel Framework, Git And Github, Web Front End, Web Back End</div>
           </div>
           <div class="jumbotron-btn text-center">
-            <a class="btn btn-dark btn-lg btn-profile" href="#contact"><span class="fas fa-mail-bulk"></span> Contact</a>
+            <a class="btn btn-dark btn-lg btn-profile" data-aos="zoom-in" href="#contact">Contact Me</a>
           </div>
         </div>
       </div>
@@ -69,7 +69,7 @@
   </section>
 
   <!-- About -->
-  <section id="about" class="wow">
+  <section id="about">
     <div class="container" data-aos="fade-down">
       <!-- <div class="row text-center">
              <h1>About Me</h1>
@@ -487,8 +487,8 @@
           }
         }, 4000 / 2);
       };
-      loader();
       $('nav.navbar').removeClass('fixed-top')
+      loader();
       setTimeout(function(){
         $('nav.navbar').addClass('fixed-top')
       },4000/2)
@@ -499,7 +499,7 @@
           event.preventDefault();
 
           $('html, body').animate({
-            scrollTop: $(this.hash).offset().top - 49
+            scrollTop: $(this.hash).offset().top - 52
           }, 10000, 'easeInOutExpo');
 
 
