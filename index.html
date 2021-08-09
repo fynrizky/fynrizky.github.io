@@ -58,8 +58,7 @@
             <h1 class="display-5 fw-bold">Hallo I'm Rizky</h1>
             <h1>This is my skill in programming</h1>
             <h2></h2>
-            <div class="typed-text">Web Programming, HTML And CSS, Javascript Language, JQuery Library, PHP Language,
-              Object Oriented, Laravel Framework, Git And Github, Web Front End, Web Back End</div>
+            <div class="typed-text">Web Programming, HTML And CSS, Javascript Language, JQuery Library, PHP Language, Object Oriented, Laravel Framework, Git And Github, Web Front End, Web Back End</div>
           </div>
           <div class="jumbotron-btn text-center">
             <a class="btn btn-dark btn-lg btn-profile" data-aos="zoom-in" href="#contact">Contact Me</a>
@@ -70,7 +69,7 @@
   </section>
 
   <!-- About -->
-  <section id="about">
+  <section id="about" class="wow">
     <div class="container" data-aos="fade-down">
       <!-- <div class="row text-center">
              <h1>About Me</h1>
@@ -488,11 +487,11 @@
           }
         }, 4000 / 2);
       };
+      $('nav.navbar').removeClass('fixed-top')
       loader();
-      $('nav').toggleClass('fixed-top');
-      setTimeout(function () {
-        $('nav').addClass('fixed-top');
-      }, 4000 / 2)
+      setTimeout(function(){
+        $('nav.navbar').addClass('fixed-top')
+      },4000/2)
 
       // Smooth scrolling on the navbar links
       $(".navbar-nav .nav-item .nav-link a").on('click', function (event) {
@@ -500,7 +499,7 @@
           event.preventDefault();
 
           $('html, body').animate({
-            scrollTop: $(this.hash).offset().top - 50
+            scrollTop: $(this.hash).offset().top - 49
           }, 10000, 'easeInOutExpo');
 
 

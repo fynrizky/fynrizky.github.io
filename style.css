@@ -17,7 +17,7 @@
 }
 .jumbotron-text {
     color: rgb(255, 255, 255);
-    margin-top: 120px;
+    margin-top: 200px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
     opacity: 0.7;
     z-index: 1;
@@ -317,11 +317,11 @@
         
       }
     .jumbotron {
-        margin: 0 auto;
+        margin-top: 0px;
         
     }
     .jumbotron-text {
-        margin-top: 120px;
+        margin-top: 150px;
     }
     
     .jumbotron .jumbotron-text h2 {
