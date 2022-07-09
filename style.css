@@ -1,3 +1,30 @@
+:root{
+  --theme-c: hsl(195, 20%, 15%);
+  --jumb-text-c: hsl(195, 20%, 95%);
+  --nav-brand-c: hsl(195, 20%, 15%);
+  --nav-link-c: hsl(195, 20%, 15%);
+  --nav-link-c-hover: hsl(195, 10%, 30%);
+  --nav-link-c-active: hsl(195, 10%, 30%);
+  --text-shadow-brand: hsl(195, 20%, 95%);
+
+  /* About */
+  --about-text: hsl(195, 20%, 15%);
+  --about-bg-c: hsl(0, 80%, 85%);
+
+  /* Service */
+  --service-text: hsl(195, 20%, 15%);
+  --service-bg-c: hsl(0, 0%, 87%);
+
+  /* Portfolio */
+  --portfolio-text: hsl(195, 20%, 15%);
+  --portfolio-bg-c: hsl(207, 23%, 72%);
+
+  /* Contact */
+  --contact-text: hsl(195, 20%, 15%);
+  --contact-bg-c: hsl(187, 47%, 93%);
+
+}
+
 .jumbotron{
     height: 720px;
     background-image: url(img/jb.jpg);
@@ -16,13 +43,14 @@
     bottom: 0px;
 }
 .jumbotron-text {
-    color: rgb(255, 255, 255);
+    color: var(--jumb-text-c);
     margin-top: 120px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
     opacity: 0.7;
     z-index: 1;
     position: relative;
 }
+
 
 .jumbotron .jumbotron-text h2 {
   display: inline-block;
@@ -38,12 +66,28 @@
     z-index: 1;
     position: relative;
 }
-
 .navbar-brand {
     font-size: 34px;
     z-index: 1;
     position: relative;
     /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8); */
+}
+body.dark-theme{
+  --theme-c: hsl(195, 20%, 15%);
+
+  /* About */
+  --about-text: hsl(0, 0%, 80%);
+  --about-bg-c: hsl(195, 20%, 15%);
+  /* Service */
+  --service-text: hsl(0, 0%, 80%);
+  --service-bg-c: hsl(195, 20%, 15%);
+  /* Portfolio */
+  --portfolio-text: hsl(0, 0%, 80%);
+  --portfolio-bg-c: hsl(195, 20%, 15%);
+  /* Contact */
+  --contact-text: hsl(0, 0%, 80%);
+  --contact-bg-c: hsl(195, 20%, 15%);
+  transition: ease .3s;
 }
 .nav-link{
     /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8); */
@@ -53,22 +97,31 @@
     position: relative;
 } 
 
+/* Btn Dark/light all vers*/
+.change-theme{
+  color: var(--theme-c);
+  cursor: pointer;
+}
 
-#about{
+body #about{
+    color: var(--about-text);
     height: 100%;
-    background-color: rgb(254, 178, 178);
+    background-color: var(--about-bg-c);
 }
-#service{
+body #service{
+    color: var(--service-text);
     height: 100%;
-    background-color: whitesmoke;
+    background-color: var(--service-bg-c);
 }
-#portfolio{
+body #portfolio{
+    color: var(--portfolio-text);
     height: 100%;
-    background-color: rgb(222, 222, 222);
-}
-#contact{
+    background-color: var(--portfolio-bg-c);
+  }
+  body #contact{
+    color: var(--contact-text);
     height: 100%;
-    background-color: rgb(224, 235, 239);
+    background-color: var(--contact-bg-c);
 }
 
 .about-text{
@@ -275,13 +328,23 @@
 /* Dekstop version */
 @media (min-width: 992px) { 
     .navbar-brand{
-        /* color: rgb(0, 0, 0) !important; */
+        color: var(--nav-brand-c) !important;
         
         font-size: 47px ;
-        text-shadow: 10px 8px 2px rgb(255, 255, 255);
+        text-shadow: 10px 8px 2px var(--text-shadow-brand);
     }
+
+    body.dark-theme{
+      --text-shadow-brand:hsl(195, 20%, 15%);
+      --theme-c: hsl(195, 20%, 95%);
+      --jumb-text-c: hsl(195, 20%, 95%);
+      --nav-brand-c: hsl(195, 20%, 95%);
+      --nav-link-c: hsl(195, 20%, 95%);
+      --nav-link-c-hover: hsl(195, 10%, 90%);
+    }
+    
     .nav-link{
-        color: rgb(0, 0, 0) !important;
+        color: var(--nav-link-c) !important;
         font-size: 24px ;
         font-family: roboto, sans-serif, arial;
         text-shadow: 1px 1px 1px rgba(184, 184, 184, 0.8);
@@ -289,7 +352,7 @@
 
         
     .nav-link:hover, .active{
-      color: rgba(0, 0, 0, 0.5) !important;
+      color: var(--nav-link-c-hover) !important;
       transition: 500ms;
     } 
 
@@ -338,4 +401,5 @@
     width: 100%;
     height: 270px;
   }
+  
  }
