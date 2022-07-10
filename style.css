@@ -7,6 +7,13 @@
   --nav-link-c-active: hsl(195, 10%, 30%);
   --text-shadow-brand: hsl(195, 20%, 95%);
 
+  /* Jumbotron */
+  --width-jum: 100%;
+  --height-jum: 60%;
+  --jum-linier-g: hsl(0,0%,1%);
+  --jum-linier-g-transparant: hsl(0, 0%, 20%, 1%);
+  --background-image: linear-gradient(to top, var(--jum-linier-g), var(--jum-linier-g-transparant));
+
   /* About */
   --about-text: hsl(195, 20%, 15%);
   --about-bg-c: hsl(0, 80%, 85%);
@@ -25,6 +32,7 @@
 
 }
 
+
 .jumbotron{
     height: 720px;
     background-image: url(img/jb.jpg);
@@ -36,9 +44,9 @@
 .jumbotron::after{
     content: '';
     display: block;
-    width: 100%;
-    height: 70%;
-    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0, 0, 0, 0));
+    width: var(--width-jum);
+    height: var(--height-jum);  
+    background-image: var(--background-image);
     position: absolute;
     bottom: 0px;
 }
@@ -74,6 +82,10 @@
 }
 body.dark-theme{
   --theme-c: hsl(195, 20%, 15%);
+
+  --width-jum: 100%;
+  --height-jum: 100%;
+  --background-image: linear-gradient(to top, rgba(0,0,1), rgba(0,0,0,0));
 
   /* About */
   --about-text: hsl(0, 0%, 80%);
