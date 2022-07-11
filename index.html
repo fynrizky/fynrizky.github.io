@@ -13,10 +13,11 @@
   <link rel="stylesheet" href="assets/css/aos.css" />
   <!-- <link rel="stylesheet" href="assets/css/remixicon.css"> -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/timeline.css">
   
 </head>
 
-<body id="home">
+<body id="home" >
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
@@ -35,6 +36,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link nav-btn-service" href="#service">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-btn-studiexp" href="#studiexp">Studi&Exp</a>
           </li>
           <li class="nav-item">
             <a class="nav-link nav-btn-portfolio" href="#portfolio">Portfolio</a>
@@ -220,6 +224,103 @@
       </div>
     </div>
   </section>
+
+  <!-- Educations -->
+  <section id="studiexp">
+    <div class="container">
+      <div class="row studi mt-lg-5 justify-content-center fs-6">
+        <div class="row studiexp-text text-center">
+            <h1 class ="fw-bold" data-aos="flip-down">Study And Experience</h1>
+        </div>
+        <div class="timeline studiexp-content">
+          <div class="timeline-item right " data-aos="fade-left">
+            <div class="timeline-text">
+                <div class="timeline-date">Dec 2019 - April 2020</div>
+                <h2>Open Source Program WEB RT/RW010 Penjaringan</h2>
+                <h4>Learn to make project</h4>
+                <p>
+                    Create, design database and website for RT/RW Case Study in RW010 Penjaringan area using PHP
+                    Native and JQuery..
+                </p>
+            </div>
+        </div>
+        <div class="timeline-item left" data-aos="fade-right">
+            <div class="timeline-text">
+                <div class="timeline-date">April 2020 - August 2020</div>
+                <h2>Open Source Web Project Sewa Lapangan Futsal
+                    dan Bulutangkis</h2>
+                <h4>Learn to make project</h4>
+                <p>
+                    Creating, designing databases and field websites
+                    futsal and badminton Using PHP Native and
+                    JQuery for futsal field rental and
+                    badminton.
+                </p>
+            </div>
+        </div>
+
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="timeline-text">
+                    <div class="timeline-date">21 Sept 2020</div>
+                    <h2>Graduate From</h2>
+                    <h4>Information System</h4>
+                    <p>
+                      I'm starting to get interested in Web programming languages
+                    </p>
+                </div>
+            </div>
+            
+            <div class="timeline-item right" data-aos="fade-left">
+                <div class="timeline-text">
+                    <div class="timeline-date">March 2021 - June 2021</div>
+                    <h2>Web Project Application Sale And Purchase</h2>
+                    <h4>First freelance project </h4>
+                    <p>
+                        Create, design database with Mysql and application website
+                        sales purchase and stock of product Using PHP Native
+                        OOP and Javascript jQuery.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="timeline-text">
+                    <div class="timeline-date">Dec 2021 - March 2022</div>
+                    <h2>Website Project Application Service Printer Machine</h2>
+                    <h4>Second freelance project</h4>
+                    <p>
+                        Create, design database With Mysql and application website
+                        Service Machine Printer Using PHP Native
+                        OOP and Javascript jQuery.
+                    </p>
+                </div>
+            </div>
+            <!-- <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <div class="timeline-date">2045 - 2050</div>
+                        <h2>Web Developer</h2>
+                        <h4>Soft Agency, San Francisco, CA</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <div class="timeline-date">2045 - 2050</div>
+                        <h2>Web Developer</h2>
+                        <h4>Soft Agency, San Francisco, CA</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                        </p>
+                    </div>
+                </div> -->
+        </div>
+      </div>
+</div>
+</section>
+
+  <!-- End Educations -->
 
   <!-- Service -->
   <section id="portfolio">
@@ -479,6 +580,7 @@
       $(this).toggleClass('active');
       $('.nav-btn-about').removeClass('active');
       $('.nav-btn-service').removeClass('active');
+      $('.nav-btn-studiexp').removeClass('active');
       $('.nav-btn-portfolio').removeClass('active');
       $('.nav-btn-cv').removeClass('active');
     });
@@ -486,6 +588,7 @@
       $(this).toggleClass('active');
       $('.nav-btn-home').removeClass('active');
       $('.nav-btn-service').removeClass('active');
+      $('.nav-btn-studiexp').removeClass('active');
       $('.nav-btn-portfolio').removeClass('active');
       $('.nav-btn-cv').removeClass('active');
     });
@@ -493,6 +596,15 @@
       $(this).toggleClass('active');
       $('.nav-btn-home').removeClass('active');
       $('.nav-btn-about').removeClass('active');
+      $('.nav-btn-studiexp').removeClass('active');
+      $('.nav-btn-portfolio').removeClass('active');
+      $('.nav-btn-cv').removeClass('active');
+    });
+    $('.nav-btn-studiexp').on('click', function () {
+      $(this).toggleClass('active');
+      $('.nav-btn-home').removeClass('active');
+      $('.nav-btn-about').removeClass('active');
+      $('.nav-btn-service').removeClass('active');
       $('.nav-btn-portfolio').removeClass('active');
       $('.nav-btn-cv').removeClass('active');
     });
@@ -501,6 +613,7 @@
       $('.nav-btn-home').removeClass('active');
       $('.nav-btn-about').removeClass('active');
       $('.nav-btn-service').removeClass('active');
+      $('.nav-btn-studiexp').removeClass('active');
       $('.nav-btn-cv').removeClass('active');
     });
     $('.nav-btn-cv').on('click', function () {
@@ -508,6 +621,7 @@
       $('.nav-btn-home').removeClass('active');
       $('.nav-btn-about').removeClass('active');
       $('.nav-btn-service').removeClass('active');
+      $('.nav-btn-studiexp').removeClass('active');
       $('.nav-btn-portfolio').removeClass('active');
     });
   </script>
@@ -535,7 +649,7 @@
     AOS.init({
       duration: 1000,
     });
-  </script>
+    </script>
   <!-- c* -->
   <script src="myscript/main.js"></script>
   <script src="myscript/wow.min.js"></script>
@@ -575,13 +689,13 @@
       },4000/2)
 
       // Smooth scrolling on the navbar links
-      $(".navbar-nav .nav-item .nav-link a").on('click', function (event) {
+      $(".navbar-nav  a .nav-link").on('click', function (event) {
         if (this.hash !== "") {
           event.preventDefault();
 
           $('html, body').animate({
             scrollTop: $(this.hash).offset().top - 52
-          }, 10000, 'easeInOutExpo');
+          }, 2500, 'easeInOutExpo');
 
 
         }
@@ -600,6 +714,7 @@
 
     })(jQuery);
   </script>
+
   <script>
       const themeButton = document.getElementById('theme-button')
       const darkTheme = 'dark-theme'

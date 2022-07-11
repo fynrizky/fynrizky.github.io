@@ -22,6 +22,10 @@
   --service-text: hsl(195, 20%, 15%);
   --service-bg-c: hsl(0, 0%, 87%);
 
+  /* Studiexp */
+  --studiexp-text: hsl(195, 20%, 15%);
+  --studiexp-bg-c: hsl(0, 0%, 87%);
+
   /* Portfolio */
   --portfolio-text: hsl(195, 20%, 15%);
   --portfolio-bg-c: hsl(207, 23%, 72%);
@@ -32,6 +36,9 @@
 
 }
 
+/* ::-webkit-scrollbar {
+  display: none;
+} */
 
 .jumbotron{
     height: 720px;
@@ -83,6 +90,7 @@
 body.dark-theme{
   --theme-c: hsl(195, 20%, 15%);
 
+  /* jumbotron */
   --width-jum: 100%;
   --height-jum: 100%;
   --background-image: linear-gradient(to top, rgba(0,0,1), rgba(0,0,0,0));
@@ -93,6 +101,9 @@ body.dark-theme{
   /* Service */
   --service-text: hsl(0, 0%, 80%);
   --service-bg-c: hsl(195, 20%, 15%);
+  /* Studiexp */
+  --studiexp-text: hsl(0, 0%, 80%);
+  --studiexp-bg-c: hsl(195, 20%, 15%);
   /* Portfolio */
   --portfolio-text: hsl(0, 0%, 80%);
   --portfolio-bg-c: hsl(195, 20%, 15%);
@@ -125,12 +136,17 @@ body #service{
     height: 100%;
     background-color: var(--service-bg-c);
 }
+body #studiexp{
+    color: var(--studiexp-text);
+    height: 100%;
+    background-color: var(--studiexp-bg-c);
+}
 body #portfolio{
     color: var(--portfolio-text);
     height: 100%;
     background-color: var(--portfolio-bg-c);
-  }
-  body #contact{
+}
+body #contact{
     color: var(--contact-text);
     height: 100%;
     background-color: var(--contact-bg-c);
@@ -148,6 +164,13 @@ body #portfolio{
     margin-top: 100px;
 }
 .service-content{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.studiexp-text{
+    margin-top: 50px;
+}
+.studiexp-content{
     margin-top: 20px;
     margin-bottom: 30px;
 }
