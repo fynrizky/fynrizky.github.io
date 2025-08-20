@@ -25,8 +25,8 @@
             Swal.fire({
               position: 'top-center',
               icon: 'success',
-              title: 'Data Telah Terkirim !!',
-              text: 'Menunggu Konfirmasi, Terima kasih !!', 
+              title: 'Pesan Telah Di kirim !!',
+              text: 'Data sudah diterima, Terima kasih !!', 
               showConfirmButton: false,
               timer: 5000
             });
